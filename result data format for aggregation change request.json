@@ -1,0 +1,180 @@
+{
+    "results": [
+        {
+            "jobId": "0",
+            "fromCache": false,
+            "result": {
+                "data": {
+                    "timestamp": "/Date(1673417103145)/",
+                    "rootActivityId": "1f8e9438-16b0-4547-a20c-7d3cc099a4af",
+                    "descriptor": {
+                        "Select": [
+                            null,
+                            null,
+                            {
+                                "Kind": 1,
+                                "Depth": 0,
+                                "Value": "G0",
+                                "GroupKeys": [
+                                    {
+                                        "Source": {
+                                            "Entity": "Sheet1",
+                                            "Property": "Workload Name"
+                                        },
+                                        "Calc": "G0",
+                                        "IsSameAsSelect": true
+                                    }
+                                ],
+                                "Name": "Sheet1.Workload Name"
+                            },
+                            {
+                                "Kind": 2,
+                                "Value": "M0",
+                                "Name": "CountNonNull(Sheet1.Operation)"
+                            },
+                            null
+                        ],
+                        "Expressions": {
+                            "Primary": {
+                                "Groupings": [
+                                    {
+                                        "Keys": [
+                                            {
+                                                "Source": {
+                                                    "Entity": "Sheet1",
+                                                    "Property": "Workload Name"
+                                                },
+                                                "Select": 2
+                                            }
+                                        ],
+                                        "Member": "DM0"
+                                    }
+                                ]
+                            }
+                        },
+                        "Limits": {
+                            "Primary": {
+                                "Id": "L0",
+                                "Top": {
+                                    "Count": 1000
+                                }
+                            }
+                        },
+                        "Version": 2
+                    },
+                    "dsr": {
+                        "Version": 2,
+                        "MinorVersion": 1,
+                        "DS": [
+                            {
+                                "N": "DS0",
+                                "PH": [
+                                    {
+                                        "DM0": [
+                                            {
+                                                "S": [
+                                                    {
+                                                        "N": "G0",
+                                                        "T": 1
+                                                    },
+                                                    {
+                                                        "N": "M0",
+                                                        "T": 4
+                                                    }
+                                                ],
+                                                "C": [
+                                                    "AzureActiveDirectory",
+                                                    36
+                                                ]
+                                            },
+                                            {
+                                                "C": [
+                                                    "Exchange",
+                                                    28
+                                                ]
+                                            },
+                                            {
+                                                "C": [
+                                                    "SecurityComplianceCenter",
+                                                    27
+                                                ]
+                                            },
+                                            {
+                                                "C": [
+                                                    "SharePoint"
+                                                ],
+                                                "R": 2
+                                            },
+                                            {
+                                                "C": [
+                                                    "OneDrive",
+                                                    20
+                                                ]
+                                            },
+                                            {
+                                                "C": [
+                                                    "MicrosoftTeams",
+                                                    15
+                                                ]
+                                            },
+                                            {
+                                                "C": [
+                                                    "MicrosoftStream",
+                                                    6
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "IC": true,
+                                "HAD": true
+                            }
+                        ]
+                    },
+                    "metrics": {
+                        "Version": "1.0.0",
+                        "Events": [
+                            {
+                                "Id": "4591f94b-f2f8-448d-8f73-b1920ce863fd",
+                                "Name": "Execute Semantic Query",
+                                "Component": "DSE",
+                                "Start": "2023-01-11T06:05:03.1454663Z",
+                                "End": "2023-01-11T06:05:03.1610941Z"
+                            },
+                            {
+                                "Id": "da735f93-c5cd-4026-a9d2-8f4bb95c0b24",
+                                "ParentId": "4591f94b-f2f8-448d-8f73-b1920ce863fd",
+                                "Name": "Execute DAX Query",
+                                "Component": "DSE",
+                                "Start": "2023-01-11T06:05:03.1454663Z",
+                                "End": "2023-01-11T06:05:03.1610941Z",
+                                "Metrics": {
+                                    "RowCount": 7
+                                }
+                            },
+                            {
+                                "Id": "EE35324C-CCD7-47A0-B056-34D10A05E6FB",
+                                "ParentId": "da735f93-c5cd-4026-a9d2-8f4bb95c0b24",
+                                "Name": "Execute Query",
+                                "Component": "AS",
+                                "Start": "2023-01-11T06:05:03.167Z",
+                                "End": "2023-01-11T06:05:03.17Z"
+                            },
+                            {
+                                "Id": "42D02083-A57E-4515-B1B5-AEE32B666D91",
+                                "ParentId": "EE35324C-CCD7-47A0-B056-34D10A05E6FB",
+                                "Name": "Serialize Rowset",
+                                "Component": "AS",
+                                "Start": "2023-01-11T06:05:03.17Z",
+                                "End": "2023-01-11T06:05:03.17Z"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    ],
+    "jobIds": [
+        "0"
+    ]
+}

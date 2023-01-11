@@ -1,0 +1,140 @@
+{
+    "version": "1.0.0",
+    "queries": [
+        {
+            "Query": {
+                "Commands": [
+                    {
+                        "SemanticQueryDataShapeCommand": {
+                            "Query": {
+                                "Version": 2,
+                                "From": [
+                                    {
+                                        "Name": "s",
+                                        "Entity": "Sheet1",
+                                        "Type": 0
+                                    }
+                                ],
+                                "Select": [
+                                    {
+                                        "Column": {
+                                            "Expression": {
+                                                "SourceRef": {
+                                                    "Source": "s"
+                                                }
+                                            },
+                                            "Property": "User's Department"
+                                        },
+                                        "Name": "Sheet1.User's Department"
+                                    },
+                                    {
+                                        "Column": {
+                                            "Expression": {
+                                                "SourceRef": {
+                                                    "Source": "s"
+                                                }
+                                            },
+                                            "Property": "User Principal Name"
+                                        },
+                                        "Name": "Sheet1.User Principal Name"
+                                    },
+                                    {
+                                        "Column": {
+                                            "Expression": {
+                                                "SourceRef": {
+                                                    "Source": "s"
+                                                }
+                                            },
+                                            "Property": "Workload Name"
+                                        },
+                                        "Name": "Sheet1.Workload Name"
+                                    },
+                                    {
+                                        "Aggregation": {
+                                            "Expression": {
+                                                "Column": {
+                                                    "Expression": {
+                                                        "SourceRef": {
+                                                            "Source": "s"
+                                                        }
+                                                    },
+                                                    "Property": "Operation"
+                                                }
+                                            },
+                                            "Function": 2
+                                        },
+                                        "Name": "CountNonNull(Sheet1.Operation)"
+                                    },
+                                    {
+                                        "Column": {
+                                            "Expression": {
+                                                "SourceRef": {
+                                                    "Source": "s"
+                                                }
+                                            },
+                                            "Property": "Operation Name"
+                                        },
+                                        "Name": "Sheet1.Operation Name"
+                                    }
+                                ],
+                                "OrderBy": [
+                                    {
+                                        "Direction": 2,
+                                        "Expression": {
+                                            "Aggregation": {
+                                                "Expression": {
+                                                    "Column": {
+                                                        "Expression": {
+                                                            "SourceRef": {
+                                                                "Source": "s"
+                                                            }
+                                                        },
+                                                        "Property": "Operation"
+                                                    }
+                                                },
+                                                "Function": 2
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "Binding": {
+                                "Primary": {
+                                    "Groupings": [
+                                        {
+                                            "Projections": [
+                                                2,
+                                                3
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "DataReduction": {
+                                    "DataVolume": 3,
+                                    "Primary": {
+                                        "Top": {}
+                                    }
+                                },
+                                "Version": 1
+                            },
+                            "ExecutionMetricsKind": 1
+                        }
+                    }
+                ]
+            },
+            "QueryId": "0bfc5d1e-f819-f8e8-1e3c-5b0822fe771e",
+            "ApplicationContext": {
+                "DatasetId": "7a922fce-5ede-4bab-9333-9af26be49f47",
+                "Sources": [
+                    {
+                        "ReportId": "4025b720-77a9-4f4d-afaa-7f3216e541d3",
+                        "VisualId": "ce3f8082c70544d86732"
+                    }
+                ]
+            }
+        }
+    ],
+    "cancelQueries": [],
+    "modelId": 532216,
+    "userPreferredLocale": "en-GB"
+}

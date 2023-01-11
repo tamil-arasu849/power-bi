@@ -1,0 +1,115 @@
+{
+    "Commands": [
+        {
+            "SemanticQueryDataShapeCommand": {
+                "Query": {
+                    "Version": 2,
+                    "From": [
+                        {
+                            "Name": "s",
+                            "Entity": "Sheet1",
+                            "Type": 0
+                        }
+                    ],
+                    "Select": [
+                        {
+                            "Column": {
+                                "Expression": {
+                                    "SourceRef": {
+                                        "Source": "s"
+                                    }
+                                },
+                                "Property": "User's Department"
+                            },
+                            "Name": "Sheet1.User's Department"
+                        },
+                        {
+                            "Column": {
+                                "Expression": {
+                                    "SourceRef": {
+                                        "Source": "s"
+                                    }
+                                },
+                                "Property": "User Principal Name"
+                            },
+                            "Name": "Sheet1.User Principal Name"
+                        },
+                        {
+                            "Column": {
+                                "Expression": {
+                                    "SourceRef": {
+                                        "Source": "s"
+                                    }
+                                },
+                                "Property": "Workload Name"
+                            },
+                            "Name": "Sheet1.Workload Name"
+                        },
+                        {
+                            "Column": {
+                                "Expression": {
+                                    "SourceRef": {
+                                        "Source": "s"
+                                    }
+                                },
+                                "Property": "Operation Name"
+                            },
+                            "Name": "Sheet1.Operation Name"
+                        },
+                        {
+                            "Aggregation": {
+                                "Expression": {
+                                    "Column": {
+                                        "Expression": {
+                                            "SourceRef": {
+                                                "Source": "s"
+                                            }
+                                        },
+                                        "Property": "Operation"
+                                    }
+                                },
+                                "Function": 5
+                            },
+                            "Name": "CountNonNull(Sheet1.Operation)"
+                        }
+                    ],
+                    "OrderBy": [
+                        {
+                            "Direction": 1,
+                            "Expression": {
+                                "Column": {
+                                    "Expression": {
+                                        "SourceRef": {
+                                            "Source": "s"
+                                        }
+                                    },
+                                    "Property": "User's Department"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "Binding": {
+                    "Primary": {
+                        "Groupings": [
+                            {
+                                "Projections": [
+                                    0,
+                                    4
+                                ]
+                            }
+                        ]
+                    },
+                    "DataReduction": {
+                        "DataVolume": 3,
+                        "Primary": {
+                            "Top": {}
+                        }
+                    },
+                    "Version": 1
+                },
+                "ExecutionMetricsKind": 1
+            }
+        }
+    ]
+}
