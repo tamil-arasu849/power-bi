@@ -1,0 +1,94 @@
+[
+	{
+		"name": "Filter601407849e26a40b8c5e",
+		"expression": {
+			"Aggregation": {
+				"Expression": {
+					"Column": {
+						"Expression": {
+							"SourceRef": {
+								"Entity": "Sheet1"
+							}
+						},
+						"Property": "Operation"
+					}
+				},
+				"Function": 5
+			}
+		},
+		"type": "Advanced",
+		"howCreated": 0,
+		"isHiddenInViewMode": false,
+		"ordinal": 0
+	},
+	{
+		"name": "Filter34f70ecad95b273b70b8",
+		"expression": {
+			"Column": {
+				"Expression": {
+					"SourceRef": {
+						"Entity": "Sheet1"
+					}
+				},
+				"Property": "Operation Name"
+			}
+		},
+		"type": "Categorical",
+		"howCreated": 0,
+		"isHiddenInViewMode": false,
+		"ordinal": 1
+	},
+	{
+		"name": "Filter627bdf7920ba51b17004",
+		"expression": {
+			"Column": {
+				"Expression": {
+					"SourceRef": {
+						"Entity": "Sheet1"
+					}
+				},
+				"Property": "User Principal Name"
+			}
+		},
+		"type": "Categorical",
+		"howCreated": 0,
+		"isHiddenInViewMode": false,
+		"ordinal": 2
+	},
+	{
+		"name": "Filter844feb10ca312ce6500a",
+		"expression": {
+			"Column": {
+				"Expression": {
+					"SourceRef": {
+						"Entity": "Sheet1"
+					}
+				},
+				"Property": "User's Department"
+			}
+		},
+		"type": "Categorical",
+		"howCreated": 0,
+		"isHiddenInViewMode": false,
+		"ordinal": 3
+	},
+	{
+		"name": "Filter872762c964891846911a",
+		"expression": {
+			"Column": {
+				"Expression": {
+					"SourceRef": {
+						"Entity": "Sheet1"
+					}
+				},
+				"Property": "Workload Name"
+			}
+		},
+		"type": "Categorical",
+		"howCreated": 0,
+		"objects": {},
+		"isHiddenInViewMode": false,
+		"isLockedInViewMode": false,
+		"ordinal": 4
+	}
+]

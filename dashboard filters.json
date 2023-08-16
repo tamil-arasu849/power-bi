@@ -1,0 +1,66 @@
+[
+	{
+		"name": "Filterf2f9d3aca8920c7e1dc1",
+		"expression": {
+			"Column": {
+				"Expression": {
+					"SourceRef": {
+						"Entity": "Sheet1"
+					}
+				},
+				"Property": "Admin Roles"
+			}
+		},
+		"filter": {
+			"Version": 2,
+			"From": [
+				{
+					"Name": "s",
+					"Entity": "Sheet1",
+					"Type": 0
+				}
+			],
+			"Where": [
+				{
+					"Condition": {
+						"In": {
+							"Expressions": [
+								{
+									"Column": {
+										"Expression": {
+											"SourceRef": {
+												"Source": "s"
+											}
+										},
+										"Property": "Admin Roles"
+									}
+								}
+							],
+							"Values": [
+								[
+									{
+										"Literal": {
+											"Value": "'Global Administrator'"
+										}
+									}
+								],
+								[
+									{
+										"Literal": {
+											"Value": "'-'"
+										}
+									}
+								]
+							]
+						}
+					}
+				}
+			]
+		},
+		"type": "Categorical",
+		"howCreated": 1,
+		"objects": {},
+		"isLockedInViewMode": true,
+		"displayName": "sfefegegegergergergergergerger"
+	}
+]
