@@ -1,0 +1,642 @@
+{
+    "version": "5.47",
+    "themeCollection": {
+        "baseTheme": {
+            "name": "CY23SU08",
+            "version": "5.48",
+            "type": 2
+        }
+    },
+    "activeSectionIndex": 0,
+    "bookmarks": [
+        {
+            "displayName": "Bookmark 1",
+            "name": "Bookmarkda6666487712e037e27e",
+            "explorationState": {
+                "version": "1.3",
+                "activeSection": "ReportSection",
+                "sections": {
+                    "ReportSection": {
+                        "visualContainers": {
+                            "a6e9283e0b7729fa546d": {
+                                "singleVisual": {
+                                    "visualType": "shape",
+                                    "objects": {}
+                                }
+                            },
+                            "327aa9c831f83af7a6e9": {
+                                "filters": {
+                                    "byExpr": [
+                                        {
+                                            "type": "Advanced",
+                                            "expression": {
+                                                "Aggregation": {
+                                                    "Expression": {
+                                                        "Column": {
+                                                            "Expression": {
+                                                                "SourceRef": {
+                                                                    "Entity": "Sheet1"
+                                                                }
+                                                            },
+                                                            "Property": "Admin Roles"
+                                                        }
+                                                    },
+                                                    "Function": 2
+                                                }
+                                            },
+                                            "howCreated": 0
+                                        }
+                                    ]
+                                },
+                                "singleVisual": {
+                                    "visualType": "multiRowCard",
+                                    "objects": {}
+                                }
+                            },
+                            "151ef5fc25ee8c8f440a": {
+                                "filters": {
+                                    "byExpr": [
+                                        {
+                                            "type": "Advanced",
+                                            "expression": {
+                                                "Aggregation": {
+                                                    "Expression": {
+                                                        "Column": {
+                                                            "Expression": {
+                                                                "SourceRef": {
+                                                                    "Entity": "Sheet1"
+                                                                }
+                                                            },
+                                                            "Property": "Member Of"
+                                                        }
+                                                    },
+                                                    "Function": 2
+                                                }
+                                            },
+                                            "howCreated": 0
+                                        }
+                                    ]
+                                },
+                                "singleVisual": {
+                                    "visualType": "multiRowCard",
+                                    "objects": {}
+                                }
+                            },
+                            "743700a8834d0878873d": {
+                                "filters": {
+                                    "byExpr": [
+                                        {
+                                            "type": "Advanced",
+                                            "expression": {
+                                                "Aggregation": {
+                                                    "Expression": {
+                                                        "Column": {
+                                                            "Expression": {
+                                                                "SourceRef": {
+                                                                    "Entity": "Sheet1"
+                                                                }
+                                                            },
+                                                            "Property": "First Name"
+                                                        }
+                                                    },
+                                                    "Function": 2
+                                                }
+                                            },
+                                            "howCreated": 0
+                                        }
+                                    ]
+                                },
+                                "singleVisual": {
+                                    "visualType": "multiRowCard",
+                                    "objects": {}
+                                }
+                            },
+                            "5c6494fa547d966c33af": {
+                                "filters": {
+                                    "byExpr": [
+                                        {
+                                            "type": "Advanced",
+                                            "expression": {
+                                                "Aggregation": {
+                                                    "Expression": {
+                                                        "Column": {
+                                                            "Expression": {
+                                                                "SourceRef": {
+                                                                    "Entity": "Sheet1"
+                                                                }
+                                                            },
+                                                            "Property": "No of Subscriptions"
+                                                        }
+                                                    },
+                                                    "Function": 0
+                                                }
+                                            },
+                                            "howCreated": 0
+                                        }
+                                    ]
+                                },
+                                "singleVisual": {
+                                    "visualType": "multiRowCard",
+                                    "objects": {}
+                                }
+                            },
+                            "7da4f8dd4046afab2330": {
+                                "singleVisual": {
+                                    "visualType": "textbox",
+                                    "objects": {}
+                                }
+                            },
+                            "3addfa1fe1fdfbac1571": {
+                                "singleVisual": {
+                                    "visualType": "textbox",
+                                    "objects": {}
+                                }
+                            },
+                            "672cab13eb3a85813b85": {
+                                "singleVisual": {
+                                    "visualType": "shape",
+                                    "objects": {}
+                                }
+                            },
+                            "bcf022df80c57e4edda6": {
+                                "singleVisual": {
+                                    "visualType": "shape",
+                                    "objects": {}
+                                }
+                            },
+                            "fcc3cfbd467a040dacb1": {
+                                "singleVisual": {
+                                    "visualType": "shape",
+                                    "objects": {}
+                                }
+                            },
+                            "6f5a8109f0c4f382f8dd": {
+                                "singleVisual": {
+                                    "visualType": "textbox",
+                                    "objects": {}
+                                }
+                            },
+                            "0a8c889fcc6d87548491": {
+                                "singleVisual": {
+                                    "visualType": "shape",
+                                    "objects": {}
+                                }
+                            },
+                            "2621ac8324b01fef3020": {
+                                "filters": {
+                                    "byExpr": [
+                                        {
+                                            "type": "Categorical",
+                                            "expression": {
+                                                "Column": {
+                                                    "Expression": {
+                                                        "SourceRef": {
+                                                            "Entity": "Sheet1"
+                                                        }
+                                                    },
+                                                    "Property": "MFA Status"
+                                                }
+                                            },
+                                            "howCreated": 0
+                                        },
+                                        {
+                                            "type": "Advanced",
+                                            "expression": {
+                                                "Aggregation": {
+                                                    "Expression": {
+                                                        "Column": {
+                                                            "Expression": {
+                                                                "SourceRef": {
+                                                                    "Entity": "Sheet1"
+                                                                }
+                                                            },
+                                                            "Property": "Admin Roles"
+                                                        }
+                                                    },
+                                                    "Function": 2
+                                                }
+                                            },
+                                            "howCreated": 0
+                                        }
+                                    ]
+                                },
+                                "singleVisual": {
+                                    "visualType": "clusteredBarChart",
+                                    "objects": {},
+                                    "orderBy": [
+                                        {
+                                            "Direction": 2,
+                                            "Expression": {
+                                                "Aggregation": {
+                                                    "Expression": {
+                                                        "Column": {
+                                                            "Expression": {
+                                                                "SourceRef": {
+                                                                    "Entity": "Sheet1"
+                                                                }
+                                                            },
+                                                            "Property": "Admin Roles"
+                                                        }
+                                                    },
+                                                    "Function": 2
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "activeProjections": {
+                                        "Category": [
+                                            {
+                                                "Column": {
+                                                    "Expression": {
+                                                        "SourceRef": {
+                                                            "Entity": "Sheet1"
+                                                        }
+                                                    },
+                                                    "Property": "MFA Status"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            "cf9591e7702f6f5c173a": {
+                                "filters": {
+                                    "byExpr": [
+                                        {
+                                            "type": "Categorical",
+                                            "expression": {
+                                                "Column": {
+                                                    "Expression": {
+                                                        "SourceRef": {
+                                                            "Entity": "Sheet1"
+                                                        }
+                                                    },
+                                                    "Property": "MFA Status"
+                                                }
+                                            },
+                                            "howCreated": 0
+                                        },
+                                        {
+                                            "type": "Advanced",
+                                            "expression": {
+                                                "Aggregation": {
+                                                    "Expression": {
+                                                        "Column": {
+                                                            "Expression": {
+                                                                "SourceRef": {
+                                                                    "Entity": "Sheet1"
+                                                                }
+                                                            },
+                                                            "Property": "Member Of"
+                                                        }
+                                                    },
+                                                    "Function": 2
+                                                }
+                                            },
+                                            "howCreated": 0
+                                        }
+                                    ]
+                                },
+                                "singleVisual": {
+                                    "visualType": "clusteredBarChart",
+                                    "objects": {},
+                                    "orderBy": [
+                                        {
+                                            "Direction": 2,
+                                            "Expression": {
+                                                "Aggregation": {
+                                                    "Expression": {
+                                                        "Column": {
+                                                            "Expression": {
+                                                                "SourceRef": {
+                                                                    "Entity": "Sheet1"
+                                                                }
+                                                            },
+                                                            "Property": "Member Of"
+                                                        }
+                                                    },
+                                                    "Function": 2
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "activeProjections": {
+                                        "Category": [
+                                            {
+                                                "Column": {
+                                                    "Expression": {
+                                                        "SourceRef": {
+                                                            "Entity": "Sheet1"
+                                                        }
+                                                    },
+                                                    "Property": "MFA Status"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            "c2668953ed755f7c9363": {
+                                "filters": {
+                                    "byExpr": [
+                                        {
+                                            "type": "Categorical",
+                                            "expression": {
+                                                "Column": {
+                                                    "Expression": {
+                                                        "SourceRef": {
+                                                            "Entity": "Sheet1"
+                                                        }
+                                                    },
+                                                    "Property": "MFA Status"
+                                                }
+                                            },
+                                            "howCreated": 0
+                                        },
+                                        {
+                                            "type": "Advanced",
+                                            "expression": {
+                                                "Aggregation": {
+                                                    "Expression": {
+                                                        "Column": {
+                                                            "Expression": {
+                                                                "SourceRef": {
+                                                                    "Entity": "Sheet1"
+                                                                }
+                                                            },
+                                                            "Property": "First Name"
+                                                        }
+                                                    },
+                                                    "Function": 2
+                                                }
+                                            },
+                                            "howCreated": 0
+                                        }
+                                    ]
+                                },
+                                "singleVisual": {
+                                    "visualType": "clusteredBarChart",
+                                    "objects": {},
+                                    "orderBy": [
+                                        {
+                                            "Direction": 2,
+                                            "Expression": {
+                                                "Aggregation": {
+                                                    "Expression": {
+                                                        "Column": {
+                                                            "Expression": {
+                                                                "SourceRef": {
+                                                                    "Entity": "Sheet1"
+                                                                }
+                                                            },
+                                                            "Property": "First Name"
+                                                        }
+                                                    },
+                                                    "Function": 2
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "activeProjections": {
+                                        "Category": [
+                                            {
+                                                "Column": {
+                                                    "Expression": {
+                                                        "SourceRef": {
+                                                            "Entity": "Sheet1"
+                                                        }
+                                                    },
+                                                    "Property": "MFA Status"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            "3dca46202f11121fb88a": {
+                                "filters": {
+                                    "byExpr": [
+                                        {
+                                            "type": "Categorical",
+                                            "expression": {
+                                                "Column": {
+                                                    "Expression": {
+                                                        "SourceRef": {
+                                                            "Entity": "Sheet1"
+                                                        }
+                                                    },
+                                                    "Property": "MFA Status"
+                                                }
+                                            },
+                                            "howCreated": 0
+                                        },
+                                        {
+                                            "type": "Advanced",
+                                            "expression": {
+                                                "Aggregation": {
+                                                    "Expression": {
+                                                        "Column": {
+                                                            "Expression": {
+                                                                "SourceRef": {
+                                                                    "Entity": "Sheet1"
+                                                                }
+                                                            },
+                                                            "Property": "No of Subscriptions"
+                                                        }
+                                                    },
+                                                    "Function": 0
+                                                }
+                                            },
+                                            "howCreated": 0
+                                        }
+                                    ]
+                                },
+                                "singleVisual": {
+                                    "visualType": "columnChart",
+                                    "objects": {},
+                                    "orderBy": [
+                                        {
+                                            "Direction": 2,
+                                            "Expression": {
+                                                "Aggregation": {
+                                                    "Expression": {
+                                                        "Column": {
+                                                            "Expression": {
+                                                                "SourceRef": {
+                                                                    "Entity": "Sheet1"
+                                                                }
+                                                            },
+                                                            "Property": "No of Subscriptions"
+                                                        }
+                                                    },
+                                                    "Function": 0
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "activeProjections": {
+                                        "Category": [
+                                            {
+                                                "Column": {
+                                                    "Expression": {
+                                                        "SourceRef": {
+                                                            "Entity": "Sheet1"
+                                                        }
+                                                    },
+                                                    "Property": "MFA Status"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "highlight": {
+                                    "selection": [
+                                        {
+                                            "dataMap": {
+                                                "Sheet1.MFA Status": [
+                                                    {
+                                                        "scopeId": {
+                                                            "Comparison": {
+                                                                "ComparisonKind": 0,
+                                                                "Left": {
+                                                                    "Column": {
+                                                                        "Expression": {
+                                                                            "SourceRef": {
+                                                                                "Entity": "Sheet1"
+                                                                            }
+                                                                        },
+                                                                        "Property": "MFA Status"
+                                                                    }
+                                                                },
+                                                                "Right": {
+                                                                    "Literal": {
+                                                                        "Value": "'Disabled'"
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "metadata": [
+                                                "Sum(Sheet1.No of Subscriptions)"
+                                            ]
+                                        }
+                                    ],
+                                    "filterExpressionMetadata": {
+                                        "expressions": [
+                                            {
+                                                "Column": {
+                                                    "Expression": {
+                                                        "SourceRef": {
+                                                            "Entity": "Sheet1"
+                                                        }
+                                                    },
+                                                    "Property": "MFA Status"
+                                                }
+                                            }
+                                        ],
+                                        "cachedValueItems": [
+                                            {
+                                                "identities": [
+                                                    {
+                                                        "scopeId": {
+                                                            "Comparison": {
+                                                                "ComparisonKind": 0,
+                                                                "Left": {
+                                                                    "Column": {
+                                                                        "Expression": {
+                                                                            "SourceRef": {
+                                                                                "Entity": "Sheet1"
+                                                                            }
+                                                                        },
+                                                                        "Property": "MFA Status"
+                                                                    }
+                                                                },
+                                                                "Right": {
+                                                                    "Literal": {
+                                                                        "Value": "'Disabled'"
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                ],
+                                                "valueMap": {
+                                                    "0": "Disabled"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "objects": {
+                    "merge": {
+                        "outspacePane": [
+                            {
+                                "properties": {
+                                    "expanded": {
+                                        "expr": {
+                                            "Literal": {
+                                                "Value": "false"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "options": {
+                "targetVisualNames": [
+                    "3dca46202f11121fb88a"
+                ]
+            }
+        }
+    ],
+    "defaultDrillFilterOtherVisuals": true,
+    "linguisticSchemaSyncVersion": 0,
+    "settings": {
+        "useNewFilterPaneExperience": true,
+        "allowChangeFilterTypes": true,
+        "useStylableVisualContainerHeader": true,
+        "queryLimitOption": 6,
+        "useEnhancedTooltips": true,
+        "exportDataMode": 1,
+        "useDefaultAggregateDisplayName": true,
+        "allowInlineExploration": true
+    },
+    "objects": {
+        "section": [
+            {
+                "properties": {
+                    "verticalAlignment": {
+                        "expr": {
+                            "Literal": {
+                                "Value": "'Top'"
+                            }
+                        }
+                    }
+                }
+            }
+        ],
+        "outspacePane": [
+            {
+                "properties": {
+                    "expanded": {
+                        "expr": {
+                            "Literal": {
+                                "Value": "false"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "creationSource": "QuickCreate"
+}
