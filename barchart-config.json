@@ -1,0 +1,330 @@
+{
+	"id": -1,
+	"x": 0,
+	"y": 0,
+	"z": 0,
+	"width": 690.9554140127389,
+	"height": 369.9363057324841,
+	"config": {
+		"name": "f949ee21402f35052a0c",
+		"layouts": [
+			{
+				"id": 0,
+				"position": {
+					"x": 0,
+					"y": 0,
+					"z": 0,
+					"width": 690.9554140127389,
+					"height": 369.9363057324841,
+					"tabOrder": 0
+				}
+			}
+		],
+		"singleVisual": {
+			"visualType": "columnChart",
+			"projections": {
+				"Category": [
+					{
+						"queryRef": "Sheet1.MFA Status",
+						"active": true
+					}
+				],
+				"Y": [
+					{
+						"queryRef": "Count(Sheet1.First Name)"
+					}
+				]
+			},
+			"prototypeQuery": {
+				"Version": 2,
+				"From": [
+					{
+						"Name": "s",
+						"Entity": "Sheet1",
+						"Type": 0
+					}
+				],
+				"Select": [
+					{
+						"Column": {
+							"Expression": {
+								"SourceRef": {
+									"Source": "s"
+								}
+							},
+							"Property": "MFA Status"
+						},
+						"Name": "Sheet1.MFA Status"
+					},
+					{
+						"Aggregation": {
+							"Expression": {
+								"Column": {
+									"Expression": {
+										"SourceRef": {
+											"Source": "s"
+										}
+									},
+									"Property": "First Name"
+								}
+							},
+							"Function": 2
+						},
+						"Name": "Count(Sheet1.First Name)"
+					}
+				],
+				"OrderBy": [
+					{
+						"Direction": 2,
+						"Expression": {
+							"Aggregation": {
+								"Expression": {
+									"Column": {
+										"Expression": {
+											"SourceRef": {
+												"Source": "s"
+											}
+										},
+										"Property": "First Name"
+									}
+								},
+								"Function": 2
+							}
+						}
+					}
+				]
+			},
+			"columnProperties": {
+				"Count(Sheet1.First Name)": {
+					"displayName": "Count of First Name"
+				}
+			},
+			"drillFilterOtherVisuals": true,
+			"objects": {
+				"categoryAxis": [
+					{
+						"properties": {
+							"axisType": {
+								"expr": {
+									"Literal": {
+										"Value": "'Categorical'"
+									}
+								}
+							},
+							"concatenateLabels": {
+								"expr": {
+									"Literal": {
+										"Value": "true"
+									}
+								}
+							}
+						}
+					}
+				],
+				"labels": [
+					{
+						"properties": {
+							"show": {
+								"expr": {
+									"Literal": {
+										"Value": "true"
+									}
+								}
+							}
+						}
+					}
+				],
+				"dataPoint": [
+					{
+						"properties": {
+							"fill": {
+								"solid": {
+									"color": {
+										"expr": {
+											"ThemeDataColor": {
+												"ColorId": 3,
+												"Percent": 0
+											}
+										}
+									}
+								}
+							}
+						}
+					},
+					{
+						"properties": {
+							"fill": {
+								"solid": {
+									"color": {
+										"expr": {
+											"ThemeDataColor": {
+												"ColorId": 4,
+												"Percent": -0.25
+											}
+										}
+									}
+								}
+							}
+						},
+						"selector": {
+							"data": [
+								{
+									"scopeId": {
+										"Comparison": {
+											"ComparisonKind": 0,
+											"Left": {
+												"Column": {
+													"Expression": {
+														"SourceRef": {
+															"Entity": "Sheet1"
+														}
+													},
+													"Property": "MFA Status"
+												}
+											},
+											"Right": {
+												"Literal": {
+													"Value": "'Disabled'"
+												}
+											}
+										}
+									}
+								}
+							]
+						}
+					},
+					{
+						"properties": {
+							"fill": {
+								"solid": {
+									"color": {
+										"expr": {
+											"ThemeDataColor": {
+												"ColorId": 7,
+												"Percent": -0.5
+											}
+										}
+									}
+								}
+							}
+						},
+						"selector": {
+							"data": [
+								{
+									"scopeId": {
+										"Comparison": {
+											"ComparisonKind": 0,
+											"Left": {
+												"Column": {
+													"Expression": {
+														"SourceRef": {
+															"Entity": "Sheet1"
+														}
+													},
+													"Property": "MFA Status"
+												}
+											},
+											"Right": {
+												"Literal": {
+													"Value": "'Enabled'"
+												}
+											}
+										}
+									}
+								}
+							]
+						}
+					},
+					{
+						"properties": {
+							"fillTransparency": {
+								"expr": {
+									"Literal": {
+										"Value": "38D"
+									}
+								}
+							},
+							"fill": {
+								"solid": {
+									"color": {
+										"expr": {
+											"ThemeDataColor": {
+												"ColorId": 8,
+												"Percent": -0.5
+											}
+										}
+									}
+								}
+							}
+						},
+						"selector": {
+							"data": [
+								{
+									"scopeId": {
+										"Comparison": {
+											"ComparisonKind": 0,
+											"Left": {
+												"Column": {
+													"Expression": {
+														"SourceRef": {
+															"Entity": "Sheet1"
+														}
+													},
+													"Property": "MFA Status"
+												}
+											},
+											"Right": {
+												"Literal": {
+													"Value": "'Enforced'"
+												}
+											}
+										}
+									}
+								}
+							]
+						}
+					}
+				]
+			},
+			"vcObjects": {
+				"visualHeader": [
+					{
+						"properties": {
+							"showCopyVisualImageButton": {
+								"expr": {
+									"Literal": {
+										"Value": "false"
+									}
+								}
+							},
+							"showFilterRestatementButton": {
+								"expr": {
+									"Literal": {
+										"Value": "false"
+									}
+								}
+							},
+							"showFocusModeButton": {
+								"expr": {
+									"Literal": {
+										"Value": "false"
+									}
+								}
+							},
+							"showPinButton": {
+								"expr": {
+									"Literal": {
+										"Value": "false"
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"filters": "[]",
+	"query": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"MFA Status\"},\"Name\":\"Sheet1.MFA Status\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"First Name\"}},\"Function\":2},\"Name\":\"Count(Sheet1.First Name)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"First Name\"}},\"Function\":2}}}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0,1]}]},\"DataReduction\":{\"DataVolume\":4,\"Primary\":{\"Window\":{\"Count\":1000}}},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+	"dataTransforms": "{\"objects\":{\"categoryAxis\":[{\"properties\":{\"axisType\":{\"expr\":{\"Literal\":{\"Value\":\"'Categorical'\"}}},\"concatenateLabels\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":-0.25}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Sheet1\"}},\"Property\":\"MFA Status\"}},\"Right\":{\"Literal\":{\"Value\":\"'Disabled'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":-0.5}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Sheet1\"}},\"Property\":\"MFA Status\"}},\"Right\":{\"Literal\":{\"Value\":\"'Enabled'\"}}}}}]}},{\"properties\":{\"fillTransparency\":{\"expr\":{\"Literal\":{\"Value\":\"38D\"}}},\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":-0.5}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Sheet1\"}},\"Property\":\"MFA Status\"}},\"Right\":{\"Literal\":{\"Value\":\"'Enforced'\"}}}}}]}}]},\"projectionOrdering\":{\"Category\":[0],\"Y\":[1]},\"projectionActiveItems\":{\"Category\":[{\"queryRef\":\"Sheet1.MFA Status\",\"suppressConcat\":false}]},\"queryMetadata\":{\"Select\":[{\"Restatement\":\"MFA Status\",\"Name\":\"Sheet1.MFA Status\",\"Type\":2048},{\"Restatement\":\"Count of First Name\",\"Name\":\"Count(Sheet1.First Name)\",\"Type\":3}],\"Filters\":[{\"type\":0,\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Sheet1\"}},\"Property\":\"MFA Status\"}}},{\"type\":2,\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Sheet1\"}},\"Property\":\"First Name\"}},\"Function\":2}}}]},\"visualElements\":[{\"DataRoles\":[{\"Name\":\"Category\",\"Projection\":0,\"isActive\":true},{\"Name\":\"Y\",\"Projection\":1,\"isActive\":false}]}],\"selects\":[{\"displayName\":\"MFA Status\",\"queryName\":\"Sheet1.MFA Status\",\"roles\":{\"Category\":true},\"type\":{\"category\":null,\"underlyingType\":1},\"expr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Sheet1\"}},\"Property\":\"MFA Status\"}}},{\"displayName\":\"Count of First Name\",\"queryName\":\"Count(Sheet1.First Name)\",\"roles\":{\"Y\":true},\"sort\":2,\"sortOrder\":0,\"type\":{\"category\":null,\"underlyingType\":260},\"expr\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Sheet1\"}},\"Property\":\"First Name\"}},\"Function\":2}}}]}"
+}

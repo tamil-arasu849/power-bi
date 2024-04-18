@@ -1,0 +1,226 @@
+{
+    "exploration": {
+        "id": 1247230,
+        "reportId": 620771,
+        "config": "{\"version\":\"5.50\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY22SU11\",\"version\":\"5.40\",\"type\":2}},\"activeSectionIndex\":2,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"allowInlineExploration\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"creationSource\":\"QuickCreate\"}",
+        "filters": "[{\"name\":\"Filterbdf7e6305382363ec742\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Sheet1\"}},\"Property\":\"Department\"}},\"type\":\"Categorical\",\"howCreated\":1}]",
+        "layoutOptimization": 0,
+        "resourcePackages": [
+            {
+                "resourcePackage": {
+                    "id": 3702018,
+                    "name": "SharedResources",
+                    "type": 2,
+                    "items": [
+                        {
+                            "id": 38984229,
+                            "resourcePackageId": 3597575,
+                            "type": 202,
+                            "path": "BaseThemes/CY22SU11.json",
+                            "name": "CY22SU11"
+                        }
+                    ],
+                    "disabled": false
+                }
+            }
+        ],
+        "publicCustomVisuals": [
+            "ChordChart1444757060245"
+        ]
+    },
+    "addedPods": [],
+    "deletedPods": [],
+    "updatedPods": [],
+    "addedPages": [],
+    "deletedPages": [],
+    "updatedPages": [
+        {
+            "pageId": 27416841,
+            "addedVisualContainers": [],
+            "updatedVisualContainers": [
+                {
+                    "id": 1083583015,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "width": 690.9554140127389,
+                    "height": 369.9363057324841,
+                    "config": {
+						"name": "f949ee21402f35052a0c",
+						"layouts": [
+							{
+								"id": 0,
+								"position": {
+									"x": 0,
+									"y": 0,
+									"z": 0,
+									"width": 690.9554140127389,
+									"height": 369.9363057324841,
+									"tabOrder": 0
+								}
+							}
+						],
+						"singleVisual": {
+							"visualType": "columnChart",
+							"projections": {
+								"Y": [
+									{
+										"queryRef": "Count(Sheet1.First Name)"
+									},
+									{
+										"queryRef": "CountNonNull(Sheet1.City)"
+									},
+									{
+										"queryRef": "CountNonNull(Sheet1.Department)"
+									}
+								]
+							},
+							"prototypeQuery": {
+								"Version": 2,
+								"From": [
+									{
+										"Name": "s",
+										"Entity": "Sheet1",
+										"Type": 0
+									}
+								],
+								"Select": [
+									{
+										"Aggregation": {
+											"Expression": {
+												"Column": {
+													"Expression": {
+														"SourceRef": {
+															"Source": "s"
+														}
+													},
+													"Property": "First Name"
+												}
+											},
+											"Function": 2
+										},
+										"Name": "Count(Sheet1.First Name)"
+									},
+									{
+										"Aggregation": {
+											"Expression": {
+												"Column": {
+													"Expression": {
+														"SourceRef": {
+															"Source": "s"
+														}
+													},
+													"Property": "City"
+												}
+											},
+											"Function": 5
+										},
+										"Name": "CountNonNull(Sheet1.City)",
+										"NativeReferenceName": "Count of City"
+									},
+									{
+										"Aggregation": {
+											"Expression": {
+												"Column": {
+													"Expression": {
+														"SourceRef": {
+															"Source": "s"
+														}
+													},
+													"Property": "Department"
+												}
+											},
+											"Function": 5
+										},
+										"Name": "CountNonNull(Sheet1.Department)",
+										"NativeReferenceName": "Count of Department"
+									}
+								],
+								"OrderBy": [
+									{
+										"Direction": 2,
+										"Expression": {
+											"Aggregation": {
+												"Expression": {
+													"Column": {
+														"Expression": {
+															"SourceRef": {
+																"Source": "s"
+															}
+														},
+														"Property": "First Name"
+													}
+												},
+												"Function": 2
+											}
+										}
+									}
+								]
+							},
+							"columnProperties": {
+								"Count(Sheet1.First Name)": {
+									"displayName": "Count of First Name"
+								}
+							},
+							"drillFilterOtherVisuals": true,
+							"objects": {
+								"dataPoint": [
+									{
+										"properties": {
+											"fill": {
+												"solid": {
+													"color": {
+														"expr": {
+															"ThemeDataColor": {
+																"ColorId": 8,
+																"Percent": 0.2
+															}
+														}
+													}
+												}
+											}
+										},
+										"selector": {
+											"metadata": "CountNonNull(Sheet1.City)"
+										}
+									},
+									{
+										"properties": {
+											"fill": {
+												"solid": {
+													"color": {
+														"expr": {
+															"ThemeDataColor": {
+																"ColorId": 7,
+																"Percent": -0.5
+															}
+														}
+													}
+												}
+											},
+											"fillTransparency": {
+												"expr": {
+													"Literal": {
+														"Value": "35D"
+													}
+												}
+											}
+										},
+										"selector": {
+											"metadata": "CountNonNull(Sheet1.Department)"
+										}
+									}
+								]
+							},
+							"vcObjects": {}
+						}
+					},
+                    "filters": "[]",
+                    "query": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"First Name\"}},\"Function\":2},\"Name\":\"Count(Sheet1.First Name)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"City\"}},\"Function\":5},\"Name\":\"CountNonNull(Sheet1.City)\",\"NativeReferenceName\":\"Count of City\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Department\"}},\"Function\":5},\"Name\":\"CountNonNull(Sheet1.Department)\",\"NativeReferenceName\":\"Count of Department\"}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0,1,2]}]},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+                    "dataTransforms": "{\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.2}}}}}},\"selector\":{\"metadata\":\"CountNonNull(Sheet1.City)\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":-0.5}}}}},\"fillTransparency\":{\"expr\":{\"Literal\":{\"Value\":\"35D\"}}}},\"selector\":{\"metadata\":\"CountNonNull(Sheet1.Department)\"}}]},\"projectionOrdering\":{\"Y\":[0,1,2]},\"queryMetadata\":{\"Select\":[{\"Restatement\":\"Count of First Name\",\"Name\":\"Count(Sheet1.First Name)\",\"Type\":3},{\"Restatement\":\"Count of City\",\"Name\":\"CountNonNull(Sheet1.City)\",\"Type\":3},{\"Restatement\":\"Count of Department\",\"Name\":\"CountNonNull(Sheet1.Department)\",\"Type\":3}],\"Filters\":[{\"type\":2,\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Sheet1\"}},\"Property\":\"First Name\"}},\"Function\":2}}},{\"type\":2,\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Sheet1\"}},\"Property\":\"City\"}},\"Function\":5}}},{\"type\":2,\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Sheet1\"}},\"Property\":\"Department\"}},\"Function\":5}}}]},\"visualElements\":[{\"DataRoles\":[{\"Name\":\"Y\",\"Projection\":0,\"isActive\":false},{\"Name\":\"Y\",\"Projection\":1,\"isActive\":false},{\"Name\":\"Y\",\"Projection\":2,\"isActive\":false}]}],\"selects\":[{\"displayName\":\"Count of First Name\",\"queryName\":\"Count(Sheet1.First Name)\",\"roles\":{\"Y\":true},\"type\":{\"category\":null,\"underlyingType\":260},\"expr\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Sheet1\"}},\"Property\":\"First Name\"}},\"Function\":2}}},{\"displayName\":\"Count of City\",\"queryName\":\"CountNonNull(Sheet1.City)\",\"roles\":{\"Y\":true},\"type\":{\"category\":null,\"underlyingType\":260},\"expr\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Sheet1\"}},\"Property\":\"City\"}},\"Function\":5}}},{\"displayName\":\"Count of Department\",\"queryName\":\"CountNonNull(Sheet1.Department)\",\"roles\":{\"Y\":true},\"type\":{\"category\":null,\"underlyingType\":260},\"expr\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Sheet1\"}},\"Property\":\"Department\"}},\"Function\":5}}}]}"
+                }
+            ],
+            "deletedVisualContainers": []
+        }
+    ]
+}

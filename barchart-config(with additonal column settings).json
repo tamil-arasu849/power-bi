@@ -1,0 +1,318 @@
+{
+    "exploration": {
+        "id": 1247230,
+        "reportId": 620771,
+        "config": "{\"version\":\"5.51\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY22SU11\",\"version\":\"5.40\",\"type\":2}},\"activeSectionIndex\":2,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"allowInlineExploration\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"creationSource\":\"QuickCreate\"}",
+        "filters": "[{\"name\":\"Filterbdf7e6305382363ec742\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Sheet1\"}},\"Property\":\"Department\"}},\"type\":\"Categorical\",\"howCreated\":1}]",
+        "layoutOptimization": 0,
+        "resourcePackages": [
+            {
+                "resourcePackage": {
+                    "id": 3702278,
+                    "name": "SharedResources",
+                    "type": 2,
+                    "items": [
+                        {
+                            "id": 38995686,
+                            "resourcePackageId": 3702025,
+                            "type": 202,
+                            "path": "BaseThemes/CY22SU11.json",
+                            "name": "CY22SU11",
+                            "content": "{\r\n    \"name\": \"CY22SU09\",\r\n    \"dataColors\": [\r\n        \"#118DFF\",\r\n        \"#12239E\",\r\n        \"#E66C37\",\r\n        \"#6B007B\",\r\n        \"#E044A7\",\r\n        \"#744EC2\",\r\n        \"#D9B300\",\r\n        \"#D64550\",\r\n        \"#197278\",\r\n        \"#1AAB40\",\r\n        \"#15C6F4\",\r\n        \"#4092FF\",\r\n        \"#FFA058\",\r\n        \"#BE5DC9\",\r\n        \"#F472D0\",\r\n        \"#B5A1FF\",\r\n        \"#C4A200\",\r\n        \"#FF8080\",\r\n        \"#00DBBC\",\r\n        \"#5BD667\",\r\n        \"#0091D5\",\r\n        \"#4668C5\",\r\n        \"#FF6300\",\r\n        \"#99008A\",\r\n        \"#EC008C\",\r\n        \"#533285\",\r\n        \"#99700A\",\r\n        \"#FF4141\",\r\n        \"#1F9A85\",\r\n        \"#25891C\",\r\n        \"#0057A2\",\r\n        \"#002050\",\r\n        \"#C94F0F\",\r\n        \"#450F54\",\r\n        \"#B60064\",\r\n        \"#34124F\",\r\n        \"#6A5A29\",\r\n        \"#1AAB40\",\r\n        \"#BA141A\",\r\n        \"#0C3D37\",\r\n        \"#0B511F\"\r\n    ],\r\n    \"foreground\": \"#252423\",\r\n    \"foregroundNeutralSecondary\": \"#605E5C\",\r\n    \"foregroundNeutralTertiary\": \"#B3B0AD\",\r\n    \"background\": \"#FFFFFF\",\r\n    \"backgroundLight\": \"#F3F2F1\",\r\n    \"backgroundNeutral\": \"#C8C6C4\",\r\n    \"tableAccent\": \"#118DFF\",\r\n    \"good\": \"#1AAB40\",\r\n    \"neutral\": \"#D9B300\",\r\n    \"bad\": \"#D64554\",\r\n    \"maximum\": \"#118DFF\",\r\n    \"center\": \"#D9B300\",\r\n    \"minimum\": \"#DEEFFF\",\r\n    \"null\": \"#FF7F48\",\r\n    \"hyperlink\": \"#0078d4\",\r\n    \"visitedHyperlink\": \"#0078d4\",\r\n    \"textClasses\": {\r\n        \"callout\": {\r\n            \"fontSize\": 45,\r\n            \"fontFace\": \"DIN\",\r\n            \"color\": \"#252423\"\r\n        },\r\n        \"title\": {\r\n            \"fontSize\": 12,\r\n            \"fontFace\": \"DIN\",\r\n            \"color\": \"#252423\"\r\n        },\r\n        \"header\": {\r\n            \"fontSize\": 12,\r\n            \"fontFace\": \"Segoe UI Semibold\",\r\n            \"color\": \"#252423\"\r\n        },\r\n        \"label\": {\r\n            \"fontSize\": 10,\r\n            \"fontFace\": \"Segoe UI\",\r\n            \"color\": \"#252423\"\r\n        }\r\n    },\r\n    \"visualStyles\": {\r\n        \"*\": {\r\n            \"*\": {\r\n                \"*\": [\r\n                    {\r\n                        \"wordWrap\": true\r\n                    }\r\n                ],\r\n                \"line\": [\r\n                    {\r\n                        \"transparency\": 0\r\n                    }\r\n                ],\r\n                \"outline\": [\r\n                    {\r\n                        \"transparency\": 0\r\n                    }\r\n                ],\r\n                \"plotArea\": [\r\n                    {\r\n                        \"transparency\": 0\r\n                    }\r\n                ],\r\n                \"categoryAxis\": [\r\n                    {\r\n                        \"showAxisTitle\": true,\r\n                        \"gridlineStyle\": \"dotted\",\r\n                        \"concatenateLabels\": false\r\n                    }\r\n                ],\r\n                \"valueAxis\": [\r\n                    {\r\n                        \"showAxisTitle\": true,\r\n                        \"gridlineStyle\": \"dotted\"\r\n                    }\r\n                ],\r\n                \"y2Axis\": [\r\n                    {\r\n                        \"show\": true\r\n                    }\r\n                ],\r\n                \"title\": [\r\n                    {\r\n                        \"titleWrap\": true\r\n                    }\r\n                ],\r\n                \"lineStyles\": [\r\n                    {\r\n                        \"strokeWidth\": 3\r\n                    }\r\n                ],\r\n                \"wordWrap\": [\r\n                    {\r\n                        \"show\": true\r\n                    }\r\n                ],\r\n                \"background\": [\r\n                    {\r\n                        \"show\": true,\r\n                        \"transparency\": 0\r\n                    }\r\n                ],\r\n                \"outspacePane\": [\r\n                    {\r\n                        \"backgroundColor\": {\r\n                            \"solid\": {\r\n                                \"color\": \"#ffffff\"\r\n                            }\r\n                        },\r\n                        \"transparency\": 0,\r\n                        \"border\": true,\r\n                        \"borderColor\": {\r\n                            \"solid\": {\r\n                                \"color\": \"#B3B0AD\"\r\n                            }\r\n                        }\r\n                    }\r\n                ],\r\n                \"filterCard\": [\r\n                    {\r\n                        \"$id\": \"Applied\",\r\n                        \"transparency\": 0,\r\n                        \"foregroundColor\": {\r\n                            \"solid\": {\r\n                                \"color\": \"#252423\"\r\n                            }\r\n                        },\r\n                        \"border\": true\r\n                    },\r\n                    {\r\n                        \"$id\": \"Available\",\r\n                        \"transparency\": 0,\r\n                        \"foregroundColor\": {\r\n                            \"solid\": {\r\n                                \"color\": \"#252423\"\r\n                            }\r\n                        },\r\n                        \"border\": true\r\n                    }\r\n                ]\r\n            }\r\n        },\r\n        \"scatterChart\": {\r\n            \"*\": {\r\n                \"bubbles\": [\r\n                    {\r\n                        \"bubbleSize\": -10\r\n                    }\r\n                ],\r\n                \"general\": [\r\n                    {\r\n                        \"responsive\": true\r\n                    }\r\n                ],\r\n                \"fillPoint\": [\r\n                    {\r\n                        \"show\": true\r\n                    }\r\n                ],\r\n                \"legend\": [\r\n                    {\r\n                        \"showGradientLegend\": true\r\n                    }\r\n                ]\r\n            }\r\n        },\r\n        \"lineChart\": {\r\n            \"*\": {\r\n                \"general\": [\r\n                    {\r\n                        \"responsive\": true\r\n                    }\r\n                ],\r\n                \"smallMultiplesLayout\": [\r\n                    {\r\n                        \"backgroundTransparency\": 0,\r\n                        \"gridLineType\": \"inner\"\r\n                    }\r\n                ]\r\n            }\r\n        },\r\n        \"map\": {\r\n            \"*\": {\r\n                \"bubbles\": [\r\n                    {\r\n                        \"bubbleSize\": -10\r\n                    }\r\n                ]\r\n            }\r\n        },\r\n        \"pieChart\": {\r\n            \"*\": {\r\n                \"legend\": [\r\n                    {\r\n                        \"show\": true,\r\n                        \"position\": \"RightCenter\"\r\n                    }\r\n                ],\r\n                \"labels\": [\r\n                    {\r\n                        \"labelStyle\": \"Data value, percent of total\"\r\n                    }\r\n                ]\r\n            }\r\n        },\r\n        \"donutChart\": {\r\n            \"*\": {\r\n                \"legend\": [\r\n                    {\r\n                        \"show\": true,\r\n                        \"position\": \"RightCenter\"\r\n                    }\r\n                ],\r\n                \"labels\": [\r\n                    {\r\n                        \"labelStyle\": \"Data value, percent of total\"\r\n                    }\r\n                ]\r\n            }\r\n        },\r\n        \"pivotTable\": {\r\n            \"*\": {\r\n                \"*\": [\r\n                    {\r\n                        \"showExpandCollapseButtons\": true\r\n                    }\r\n                ]\r\n            }\r\n        },\r\n        \"multiRowCard\": {\r\n            \"*\": {\r\n                \"card\": [\r\n                    {\r\n                        \"outlineWeight\": 2,\r\n                        \"barShow\": true,\r\n                        \"barWeight\": 2\r\n                    }\r\n                ]\r\n            }\r\n        },\r\n        \"kpi\": {\r\n            \"*\": {\r\n                \"trendline\": [\r\n                    {\r\n                        \"transparency\": 20\r\n                    }\r\n                ]\r\n            }\r\n        },\r\n        \"slicer\": {\r\n            \"*\": {\r\n                \"general\": [\r\n                    {\r\n                        \"responsive\": true\r\n                    }\r\n                ],\r\n                \"date\": [\r\n                    {\r\n                        \"hideDatePickerButton\": false\r\n                    }\r\n                ],\r\n                \"items\": [\r\n                    {\r\n                        \"padding\": 4,\r\n                        \"accessibilityContrastProperties\": true\r\n                    }\r\n                ]\r\n            }\r\n        },\r\n        \"waterfallChart\": {\r\n            \"*\": {\r\n                \"general\": [\r\n                    {\r\n                        \"responsive\": true\r\n                    }\r\n                ]\r\n            }\r\n        },\r\n        \"columnChart\": {\r\n            \"*\": {\r\n                \"general\": [\r\n                    {\r\n                        \"responsive\": true\r\n                    }\r\n                ],\r\n                \"legend\": [\r\n                    {\r\n                        \"showGradientLegend\": true\r\n                    }\r\n                ],\r\n                \"smallMultiplesLayout\": [\r\n                    {\r\n                        \"backgroundTransparency\": 0,\r\n                        \"gridLineType\": \"inner\"\r\n                    }\r\n                ]\r\n            }\r\n        },\r\n        \"clusteredColumnChart\": {\r\n            \"*\": {\r\n                \"general\": [\r\n                    {\r\n                        \"responsive\": true\r\n                    }\r\n                ],\r\n                \"legend\": [\r\n                    {\r\n                        \"showGradientLegend\": true\r\n                    }\r\n                ],\r\n                \"smallMultiplesLayout\": [\r\n                    {\r\n                        \"backgroundTransparency\": 0,\r\n                        \"gridLineType\": \"inner\"\r\n                    }\r\n                ]\r\n            }\r\n        },\r\n        \"hundredPercentStackedColumnChart\": {\r\n            \"*\": {\r\n                \"general\": [\r\n                    {\r\n                        \"responsive\": true\r\n                    }\r\n                ],\r\n                \"legend\": [\r\n                    {\r\n                        \"showGradientLegend\": true\r\n                    }\r\n                ],\r\n                \"smallMultiplesLayout\": [\r\n                    {\r\n                        \"backgroundTransparency\": 0,\r\n                        \"gridLineType\": \"inner\"\r\n                    }\r\n                ]\r\n            }\r\n        },\r\n        \"barChart\": {\r\n            \"*\": {\r\n                \"general\": [\r\n                    {\r\n                        \"responsive\": true\r\n                    }\r\n                ],\r\n                \"legend\": [\r\n                    {\r\n                        \"showGradientLegend\": true\r\n                    }\r\n                ],\r\n                \"smallMultiplesLayout\": [\r\n                    {\r\n                        \"backgroundTransparency\": 0,\r\n                        \"gridLineType\": \"inner\"\r\n                    }\r\n                ]\r\n            }\r\n        },\r\n        \"clusteredBarChart\": {\r\n            \"*\": {\r\n                \"general\": [\r\n                    {\r\n                        \"responsive\": true\r\n                    }\r\n                ],\r\n                \"legend\": [\r\n                    {\r\n                        \"showGradientLegend\": true\r\n                    }\r\n                ],\r\n                \"smallMultiplesLayout\": [\r\n                    {\r\n                        \"backgroundTransparency\": 0,\r\n                        \"gridLineType\": \"inner\"\r\n                    }\r\n                ]\r\n            }\r\n        },\r\n        \"hundredPercentStackedBarChart\": {\r\n            \"*\": {\r\n                \"general\": [\r\n                    {\r\n                        \"responsive\": true\r\n                    }\r\n                ],\r\n                \"legend\": [\r\n                    {\r\n                        \"showGradientLegend\": true\r\n                    }\r\n                ],\r\n                \"smallMultiplesLayout\": [\r\n                    {\r\n                        \"backgroundTransparency\": 0,\r\n                        \"gridLineType\": \"inner\"\r\n                    }\r\n                ]\r\n            }\r\n        },\r\n        \"areaChart\": {\r\n            \"*\": {\r\n                \"general\": [\r\n                    {\r\n                        \"responsive\": true\r\n                    }\r\n                ],\r\n                \"smallMultiplesLayout\": [\r\n                    {\r\n                        \"backgroundTransparency\": 0,\r\n                        \"gridLineType\": \"inner\"\r\n                    }\r\n                ]\r\n            }\r\n        },\r\n        \"stackedAreaChart\": {\r\n            \"*\": {\r\n                \"general\": [\r\n                    {\r\n                        \"responsive\": true\r\n                    }\r\n                ],\r\n                \"smallMultiplesLayout\": [\r\n                    {\r\n                        \"backgroundTransparency\": 0,\r\n                        \"gridLineType\": \"inner\"\r\n                    }\r\n                ]\r\n            }\r\n        },\r\n        \"lineClusteredColumnComboChart\": {\r\n            \"*\": {\r\n                \"general\": [\r\n                    {\r\n                        \"responsive\": true\r\n                    }\r\n                ],\r\n                \"smallMultiplesLayout\": [\r\n                    {\r\n                        \"backgroundTransparency\": 0,\r\n                        \"gridLineType\": \"inner\"\r\n                    }\r\n                ]\r\n            }\r\n        },\r\n        \"lineStackedColumnComboChart\": {\r\n            \"*\": {\r\n                \"general\": [\r\n                    {\r\n                        \"responsive\": true\r\n                    }\r\n                ],\r\n                \"smallMultiplesLayout\": [\r\n                    {\r\n                        \"backgroundTransparency\": 0,\r\n                        \"gridLineType\": \"inner\"\r\n                    }\r\n                ]\r\n            }\r\n        },\r\n        \"ribbonChart\": {\r\n            \"*\": {\r\n                \"general\": [\r\n                    {\r\n                        \"responsive\": true\r\n                    }\r\n                ]\r\n            }\r\n        },\r\n        \"group\": {\r\n            \"*\": {\r\n                \"background\": [\r\n                    {\r\n                        \"show\": false\r\n                    }\r\n                ]\r\n            }\r\n        },\r\n        \"basicShape\": {\r\n            \"*\": {\r\n                \"background\": [\r\n                    {\r\n                        \"show\": false\r\n                    }\r\n                ],\r\n                \"general\": [\r\n                    {\r\n                        \"keepLayerOrder\": true\r\n                    }\r\n                ],\r\n                \"visualHeader\": [\r\n                    {\r\n                        \"show\": false\r\n                    }\r\n                ]\r\n            }\r\n        },\r\n        \"shape\": {\r\n            \"*\": {\r\n                \"background\": [\r\n                    {\r\n                        \"show\": false\r\n                    }\r\n                ],\r\n                \"general\": [\r\n                    {\r\n                        \"keepLayerOrder\": true\r\n                    }\r\n                ],\r\n                \"visualHeader\": [\r\n                    {\r\n                        \"show\": false\r\n                    }\r\n                ]\r\n            }\r\n        },\r\n        \"image\": {\r\n            \"*\": {\r\n                \"background\": [\r\n                    {\r\n                        \"show\": false\r\n                    }\r\n                ],\r\n                \"general\": [\r\n                    {\r\n                        \"keepLayerOrder\": true\r\n                    }\r\n                ],\r\n                \"visualHeader\": [\r\n                    {\r\n                        \"show\": false\r\n                    }\r\n                ],\r\n                \"lockAspect\": [\r\n                    {\r\n                        \"show\": true\r\n                    }\r\n                ]\r\n            }\r\n        },\r\n        \"actionButton\": {\r\n            \"*\": {\r\n                \"background\": [\r\n                    {\r\n                        \"show\": false\r\n                    }\r\n                ],\r\n                \"visualHeader\": [\r\n                    {\r\n                        \"show\": false\r\n                    }\r\n                ]\r\n            }\r\n        },\r\n        \"pageNavigator\": {\r\n            \"*\": {\r\n                \"background\": [\r\n                    {\r\n                        \"show\": false\r\n                    }\r\n                ],\r\n                \"visualHeader\": [\r\n                    {\r\n                        \"show\": false\r\n                    }\r\n                ]\r\n            }\r\n        },\r\n        \"bookmarkNavigator\": {\r\n            \"*\": {\r\n                \"background\": [\r\n                    {\r\n                        \"show\": false\r\n                    }\r\n                ],\r\n                \"visualHeader\": [\r\n                    {\r\n                        \"show\": false\r\n                    }\r\n                ]\r\n            }\r\n        },\r\n        \"textbox\": {\r\n            \"*\": {\r\n                \"general\": [\r\n                    {\r\n                        \"keepLayerOrder\": true\r\n                    }\r\n                ],\r\n                \"visualHeader\": [\r\n                    {\r\n                        \"show\": false\r\n                    }\r\n                ]\r\n            }\r\n        },\r\n        \"page\": {\r\n            \"*\": {\r\n                \"outspace\": [\r\n                    {\r\n                        \"color\": {\r\n                            \"solid\": {\r\n                                \"color\": \"#FFFFFF\"\r\n                            }\r\n                        }\r\n                    }\r\n                ],\r\n                \"background\": [\r\n                    {\r\n                        \"transparency\": 100\r\n                    }\r\n                ]\r\n            }\r\n        }\r\n    }\r\n}"
+                        }
+                    ],
+                    "disabled": false
+                }
+            }
+        ],
+        "publicCustomVisuals": [
+            "ChordChart1444757060245"
+        ]
+    },
+    "addedPods": [],
+    "deletedPods": [],
+    "updatedPods": [],
+    "addedPages": [],
+    "deletedPages": [],
+    "updatedPages": [
+        {
+            "pageId": 27416841,
+            "addedVisualContainers": [],
+            "updatedVisualContainers": [
+                {
+                    "id": 1083583015,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "width": 690.9554140127389,
+                    "height": 369.9363057324841,
+                    "config": {
+                        "name": "f949ee21402f35052a0c",
+                        "layouts": [
+                            {
+                                "id": 0,
+                                "position": {
+                                    "x": 0,
+                                    "y": 0,
+                                    "z": 0,
+                                    "width": 690.9554140127389,
+                                    "height": 369.9363057324841,
+                                    "tabOrder": 0
+                                }
+                            }
+                        ],
+                        "singleVisual": {
+                            "visualType": "columnChart",
+                            "projections": {
+                                "Y": [
+                                    {
+                                        "queryRef": "Count(Sheet1.First Name)"
+                                    },
+                                    {
+                                        "queryRef": "CountNonNull(Sheet1.City)"
+                                    },
+                                    {
+                                        "queryRef": "CountNonNull(Sheet1.Department)"
+                                    }
+                                ]
+                            },
+                            "prototypeQuery": {
+                                "Version": 2,
+                                "From": [
+                                    {
+                                        "Name": "s",
+                                        "Entity": "Sheet1",
+                                        "Type": 0
+                                    }
+                                ],
+                                "Select": [
+                                    {
+                                        "Aggregation": {
+                                            "Expression": {
+                                                "Column": {
+                                                    "Expression": {
+                                                        "SourceRef": {
+                                                            "Source": "s"
+                                                        }
+                                                    },
+                                                    "Property": "First Name"
+                                                }
+                                            },
+                                            "Function": 2
+                                        },
+                                        "Name": "Count(Sheet1.First Name)"
+                                    },
+                                    {
+                                        "Aggregation": {
+                                            "Expression": {
+                                                "Column": {
+                                                    "Expression": {
+                                                        "SourceRef": {
+                                                            "Source": "s"
+                                                        }
+                                                    },
+                                                    "Property": "City"
+                                                }
+                                            },
+                                            "Function": 5
+                                        },
+                                        "Name": "CountNonNull(Sheet1.City)",
+                                        "NativeReferenceName": "Count of City"
+                                    },
+                                    {
+                                        "Aggregation": {
+                                            "Expression": {
+                                                "Column": {
+                                                    "Expression": {
+                                                        "SourceRef": {
+                                                            "Source": "s"
+                                                        }
+                                                    },
+                                                    "Property": "Department"
+                                                }
+                                            },
+                                            "Function": 5
+                                        },
+                                        "Name": "CountNonNull(Sheet1.Department)",
+                                        "NativeReferenceName": "Count of Department"
+                                    }
+                                ],
+                                "OrderBy": [
+                                    {
+                                        "Direction": 2,
+                                        "Expression": {
+                                            "Aggregation": {
+                                                "Expression": {
+                                                    "Column": {
+                                                        "Expression": {
+                                                            "SourceRef": {
+                                                                "Source": "s"
+                                                            }
+                                                        },
+                                                        "Property": "First Name"
+                                                    }
+                                                },
+                                                "Function": 2
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "columnProperties": {
+                                "Count(Sheet1.First Name)": {
+                                    "displayName": "Count of First Name"
+                                }
+                            },
+                            "drillFilterOtherVisuals": true,
+                            "objects": {
+                                "dataPoint": [
+                                    {
+                                        "properties": {
+                                            "fill": {
+                                                "solid": {
+                                                    "color": {
+                                                        "expr": {
+                                                            "ThemeDataColor": {
+                                                                "ColorId": 8,
+                                                                "Percent": 0.2
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "selector": {
+                                            "metadata": "CountNonNull(Sheet1.City)"
+                                        }
+                                    },
+                                    {
+                                        "properties": {
+                                            "fill": {
+                                                "solid": {
+                                                    "color": {
+                                                        "expr": {
+                                                            "ThemeDataColor": {
+                                                                "ColorId": 7,
+                                                                "Percent": -0.5
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "fillTransparency": {
+                                                "expr": {
+                                                    "Literal": {
+                                                        "Value": "35D"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "selector": {
+                                            "metadata": "CountNonNull(Sheet1.Department)"
+                                        }
+                                    },
+                                    {
+                                        "properties": {
+                                            "borderShow": {
+                                                "expr": {
+                                                    "Literal": {
+                                                        "Value": "true"
+                                                    }
+                                                }
+                                            },
+                                            "borderColor": {
+                                                "solid": {
+                                                    "color": {
+                                                        "expr": {
+                                                            "ThemeDataColor": {
+                                                                "ColorId": 4,
+                                                                "Percent": 0.4
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "borderColorMatchFill": {
+                                                "expr": {
+                                                    "Literal": {
+                                                        "Value": "true"
+                                                    }
+                                                }
+                                            },
+                                            "borderTransparency": {
+                                                "expr": {
+                                                    "Literal": {
+                                                        "Value": "49D"
+                                                    }
+                                                }
+                                            },
+                                            "borderSize": {
+                                                "expr": {
+                                                    "Literal": {
+                                                        "Value": "4D"
+                                                    }
+                                                }
+                                            },
+                                            "borderOutlineOnly": {
+                                                "expr": {
+                                                    "Literal": {
+                                                        "Value": "true"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "properties": {
+                                            "borderTransparency": {
+                                                "expr": {
+                                                    "Literal": {
+                                                        "Value": "23D"
+                                                    }
+                                                }
+                                            },
+                                            "borderSize": {
+                                                "expr": {
+                                                    "Literal": {
+                                                        "Value": "8D"
+                                                    }
+                                                }
+                                            },
+                                            "borderColorMatchFill": {
+                                                "expr": {
+                                                    "Literal": {
+                                                        "Value": "false"
+                                                    }
+                                                }
+                                            },
+                                            "borderColor": {
+                                                "solid": {
+                                                    "color": {
+                                                        "expr": {
+                                                            "ThemeDataColor": {
+                                                                "ColorId": 4,
+                                                                "Percent": -0.5
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "selector": {
+                                            "metadata": "Count(Sheet1.First Name)"
+                                        }
+                                    }
+                                ]
+                            },
+                            "vcObjects": {}
+                        }
+                    },
+                    "filters": "[]",
+                    "query": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"First Name\"}},\"Function\":2},\"Name\":\"Count(Sheet1.First Name)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"City\"}},\"Function\":5},\"Name\":\"CountNonNull(Sheet1.City)\",\"NativeReferenceName\":\"Count of City\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Department\"}},\"Function\":5},\"Name\":\"CountNonNull(Sheet1.Department)\",\"NativeReferenceName\":\"Count of Department\"}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0,1,2]}]},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+                    "dataTransforms": "{\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.2}}}}}},\"selector\":{\"metadata\":\"CountNonNull(Sheet1.City)\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":-0.5}}}}},\"fillTransparency\":{\"expr\":{\"Literal\":{\"Value\":\"35D\"}}}},\"selector\":{\"metadata\":\"CountNonNull(Sheet1.Department)\"}},{\"properties\":{\"borderShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"borderColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0.4}}}}},\"borderColorMatchFill\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"borderTransparency\":{\"expr\":{\"Literal\":{\"Value\":\"49D\"}}},\"borderSize\":{\"expr\":{\"Literal\":{\"Value\":\"4D\"}}},\"borderOutlineOnly\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"borderTransparency\":{\"expr\":{\"Literal\":{\"Value\":\"23D\"}}},\"borderSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}},\"borderColorMatchFill\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"borderColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":-0.5}}}}}},\"selector\":{\"metadata\":\"Count(Sheet1.First Name)\"}}]},\"projectionOrdering\":{\"Y\":[0,1,2]},\"queryMetadata\":{\"Select\":[{\"Restatement\":\"Count of First Name\",\"Name\":\"Count(Sheet1.First Name)\",\"Type\":3},{\"Restatement\":\"Count of City\",\"Name\":\"CountNonNull(Sheet1.City)\",\"Type\":3},{\"Restatement\":\"Count of Department\",\"Name\":\"CountNonNull(Sheet1.Department)\",\"Type\":3}],\"Filters\":[{\"type\":2,\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Sheet1\"}},\"Property\":\"First Name\"}},\"Function\":2}}},{\"type\":2,\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Sheet1\"}},\"Property\":\"City\"}},\"Function\":5}}},{\"type\":2,\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Sheet1\"}},\"Property\":\"Department\"}},\"Function\":5}}}]},\"visualElements\":[{\"DataRoles\":[{\"Name\":\"Y\",\"Projection\":0,\"isActive\":false},{\"Name\":\"Y\",\"Projection\":1,\"isActive\":false},{\"Name\":\"Y\",\"Projection\":2,\"isActive\":false}]}],\"selects\":[{\"displayName\":\"Count of First Name\",\"queryName\":\"Count(Sheet1.First Name)\",\"roles\":{\"Y\":true},\"type\":{\"category\":null,\"underlyingType\":260},\"expr\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Sheet1\"}},\"Property\":\"First Name\"}},\"Function\":2}}},{\"displayName\":\"Count of City\",\"queryName\":\"CountNonNull(Sheet1.City)\",\"roles\":{\"Y\":true},\"type\":{\"category\":null,\"underlyingType\":260},\"expr\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Sheet1\"}},\"Property\":\"City\"}},\"Function\":5}}},{\"displayName\":\"Count of Department\",\"queryName\":\"CountNonNull(Sheet1.Department)\",\"roles\":{\"Y\":true},\"type\":{\"category\":null,\"underlyingType\":260},\"expr\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Sheet1\"}},\"Property\":\"Department\"}},\"Function\":5}}}]}"
+                }
+            ],
+            "deletedVisualContainers": []
+        }
+    ]
+}
