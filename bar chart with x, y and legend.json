@@ -1,0 +1,347 @@
+{
+	"exploration": {
+		"id": 3698764,
+		"reportId": 1519635,
+		"config": "{\"version\":\"5.55\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU06\",\"version\":\"5.56\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]},\"creationSource\":\"Default\"}",
+		"layoutOptimization": 0,
+		"publicCustomVisuals": []
+	},
+	"addedPods": [],
+	"deletedPods": [],
+	"updatedPods": [],
+	"addedPages": [],
+	"deletedPages": [],
+	"updatedPages": [
+		{
+			"pageId": 26167296,
+			"addedVisualContainers": [],
+			"updatedVisualContainers": [
+				{
+					"id": 796876579,
+					"x": 8,
+					"y": 0,
+					"z": 0,
+					"width": 504,
+					"height": 336,
+					"config": {
+						"name": "9eed6e0751b1d4a96f15",
+						"layouts": [
+							{
+								"id": 0,
+								"position": {
+									"x": 8,
+									"y": 0,
+									"z": 0,
+									"width": 504,
+									"height": 336,
+									"tabOrder": 0
+								}
+							}
+						],
+						"singleVisual": {
+							"visualType": "columnChart",
+							"projections": {
+								"Category": [
+									{
+										"queryRef": "Department.Department",
+										"active": true
+									}
+								],
+								"Y": [
+									{
+										"queryRef": "CountNonNull(Department.VP)"
+									}
+								],
+								"Series": [
+									{
+										"queryRef": "Fact.Cost Element ID"
+									}
+								]
+							},
+							"prototypeQuery": {
+								"Version": 2,
+								"From": [
+									{
+										"Name": "d",
+										"Entity": "Department",
+										"Type": 0
+									},
+									{
+										"Name": "f",
+										"Entity": "Fact",
+										"Type": 0
+									}
+								],
+								"Select": [
+									{
+										"Column": {
+											"Expression": {
+												"SourceRef": {
+													"Source": "d"
+												}
+											},
+											"Property": "Department"
+										},
+										"Name": "Department.Department",
+										"NativeReferenceName": "Department"
+									},
+									{
+										"Aggregation": {
+											"Expression": {
+												"Column": {
+													"Expression": {
+														"SourceRef": {
+															"Source": "d"
+														}
+													},
+													"Property": "VP"
+												}
+											},
+											"Function": 5
+										},
+										"Name": "CountNonNull(Department.VP)",
+										"NativeReferenceName": "Count of asdasd"
+									},
+									{
+										"Column": {
+											"Expression": {
+												"SourceRef": {
+													"Source": "f"
+												}
+											},
+											"Property": "Cost Element ID"
+										},
+										"Name": "Fact.Cost Element ID",
+										"NativeReferenceName": "Cost Element ID"
+									}
+								],
+								"OrderBy": [
+									{
+										"Direction": 2,
+										"Expression": {
+											"Aggregation": {
+												"Expression": {
+													"Column": {
+														"Expression": {
+															"SourceRef": {
+																"Source": "d"
+															}
+														},
+														"Property": "VP"
+													}
+												},
+												"Function": 5
+											}
+										}
+									}
+								]
+							},
+							"columnProperties": {
+								"CountNonNull(Department.VP)": {
+									"displayName": "Count of asdasd"
+								}
+							},
+							"drillFilterOtherVisuals": true,
+							"hasDefaultSort": true,
+							"objects": {
+								"dataPoint": [
+									{
+										"properties": {
+											"fill": {
+												"solid": {
+													"color": {
+														"expr": {
+															"ThemeDataColor": {
+																"ColorId": 4,
+																"Percent": 0.6
+															}
+														}
+													}
+												}
+											}
+										},
+										"selector": {
+											"metadata": "CountNonNull(Department.VP)"
+										}
+									},
+									{
+										"properties": {
+											"fill": {
+												"solid": {
+													"color": {
+														"expr": {
+															"ThemeDataColor": {
+																"ColorId": 7,
+																"Percent": 0.2
+															}
+														}
+													}
+												}
+											}
+										},
+										"selector": {
+											"data": [
+												{
+													"scopeId": {
+														"Comparison": {
+															"ComparisonKind": 0,
+															"Left": {
+																"Column": {
+																	"Expression": {
+																		"SourceRef": {
+																			"Entity": "Department"
+																		}
+																	},
+																	"Property": "Department"
+																}
+															},
+															"Right": {
+																"Literal": {
+																	"Value": "3L"
+																}
+															}
+														}
+													}
+												}
+											]
+										}
+									},
+									{
+										"properties": {
+											"fill": {
+												"solid": {
+													"color": {
+														"expr": {
+															"ThemeDataColor": {
+																"ColorId": 8,
+																"Percent": -0.5
+															}
+														}
+													}
+												}
+											}
+										},
+										"selector": {
+											"data": [
+												{
+													"scopeId": {
+														"Comparison": {
+															"ComparisonKind": 0,
+															"Left": {
+																"Column": {
+																	"Expression": {
+																		"SourceRef": {
+																			"Entity": "Department"
+																		}
+																	},
+																	"Property": "Department"
+																}
+															},
+															"Right": {
+																"Literal": {
+																	"Value": "4L"
+																}
+															}
+														}
+													}
+												}
+											]
+										}
+									},
+									{
+										"properties": {
+											"fill": {
+												"solid": {
+													"color": {
+														"expr": {
+															"ThemeDataColor": {
+																"ColorId": 6,
+																"Percent": 0.2
+															}
+														}
+													}
+												}
+											}
+										},
+										"selector": {
+											"data": [
+												{
+													"scopeId": {
+														"Comparison": {
+															"ComparisonKind": 0,
+															"Left": {
+																"Column": {
+																	"Expression": {
+																		"SourceRef": {
+																			"Entity": "Fact"
+																		}
+																	},
+																	"Property": "Cost Element ID"
+																}
+															},
+															"Right": {
+																"Literal": {
+																	"Value": "'30'"
+																}
+															}
+														}
+													}
+												}
+											]
+										}
+									},
+									{
+										"properties": {
+											"fill": {
+												"solid": {
+													"color": {
+														"expr": {
+															"ThemeDataColor": {
+																"ColorId": 2,
+																"Percent": -0.25
+															}
+														}
+													}
+												}
+											}
+										},
+										"selector": {
+											"data": [
+												{
+													"scopeId": {
+														"Comparison": {
+															"ComparisonKind": 0,
+															"Left": {
+																"Column": {
+																	"Expression": {
+																		"SourceRef": {
+																			"Entity": "Fact"
+																		}
+																	},
+																	"Property": "Cost Element ID"
+																}
+															},
+															"Right": {
+																"Literal": {
+																	"Value": "'64'"
+																}
+															}
+														}
+													}
+												}
+											]
+										}
+									}
+								]
+							}
+						}
+					},
+					"filters": "[{\"name\":\"ecc2cc3add3e2bbee79a\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Department\"}},\"Property\":\"Department\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Department\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Department\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2L\"}}],[{\"Literal\":{\"Value\":\"3L\"}}],[{\"Literal\":{\"Value\":\"4L\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{},\"isHiddenInViewMode\":false}]",
+					"query": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Department\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"Fact\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Department\"},\"Name\":\"Department.Department\",\"NativeReferenceName\":\"Department\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"VP\"}},\"Function\":5},\"Name\":\"CountNonNull(Department.VP)\",\"NativeReferenceName\":\"Count of asdasd\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Cost Element ID\"},\"Name\":\"Fact.Cost Element ID\",\"NativeReferenceName\":\"Cost Element ID\"}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Department\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2L\"}}],[{\"Literal\":{\"Value\":\"3L\"}}],[{\"Literal\":{\"Value\":\"4L\"}}]]}}}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0,1]}]},\"Secondary\":{\"Groupings\":[{\"Projections\":[2]}]},\"DataReduction\":{\"DataVolume\":4,\"Primary\":{\"Sample\":{}},\"Secondary\":{\"Top\":{}}},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+					"dataTransforms": "{\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0.6}}}}}},\"selector\":{\"metadata\":\"CountNonNull(Department.VP)\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0.2}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Department\"}},\"Property\":\"Department\"}},\"Right\":{\"Literal\":{\"Value\":\"3L\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":-0.5}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Department\"}},\"Property\":\"Department\"}},\"Right\":{\"Literal\":{\"Value\":\"4L\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":6,\"Percent\":0.2}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Fact\"}},\"Property\":\"Cost Element ID\"}},\"Right\":{\"Literal\":{\"Value\":\"'30'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":-0.25}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Fact\"}},\"Property\":\"Cost Element ID\"}},\"Right\":{\"Literal\":{\"Value\":\"'64'\"}}}}}]}}]},\"projectionOrdering\":{\"Category\":[0],\"Y\":[1],\"Series\":[2]},\"projectionActiveItems\":{\"Category\":[{\"queryRef\":\"Department.Department\",\"suppressConcat\":false}]},\"queryMetadata\":{\"Select\":[{\"Restatement\":\"Department\",\"Name\":\"Department.Department\",\"Type\":3},{\"Restatement\":\"Count of asdasd\",\"Name\":\"CountNonNull(Department.VP)\",\"Type\":3},{\"Restatement\":\"Cost Element ID\",\"Name\":\"Fact.Cost Element ID\",\"Type\":2048}],\"Filters\":[{\"type\":0,\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Department\"}},\"Property\":\"Department\"}}},{\"type\":2,\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Department\"}},\"Property\":\"VP\"}},\"Function\":5}}},{\"type\":0,\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Fact\"}},\"Property\":\"Cost Element ID\"}}}]},\"visualElements\":[{\"DataRoles\":[{\"Name\":\"Category\",\"Projection\":0,\"isActive\":true},{\"Name\":\"Y\",\"Projection\":1,\"isActive\":false},{\"Name\":\"Series\",\"Projection\":2,\"isActive\":false}]}],\"selects\":[{\"displayName\":\"Department\",\"queryName\":\"Department.Department\",\"roles\":{\"Category\":true},\"type\":{\"category\":null,\"underlyingType\":260},\"expr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Department\"}},\"Property\":\"Department\"}}},{\"displayName\":\"Count of asdasd\",\"queryName\":\"CountNonNull(Department.VP)\",\"roles\":{\"Y\":true},\"type\":{\"category\":null,\"underlyingType\":260},\"expr\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Department\"}},\"Property\":\"VP\"}},\"Function\":5}}},{\"displayName\":\"Cost Element ID\",\"queryName\":\"Fact.Cost Element ID\",\"roles\":{\"Series\":true},\"type\":{\"category\":null,\"underlyingType\":1},\"expr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Fact\"}},\"Property\":\"Cost Element ID\"}}}]}"
+				}
+			],
+			"deletedVisualContainers": []
+		}
+	]
+}
