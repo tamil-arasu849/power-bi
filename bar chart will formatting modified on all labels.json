@@ -1,0 +1,177 @@
+{
+	"exploration": {
+		"id": 3698764,
+		"reportId": 1519635,
+		"config": "{\"version\":\"5.55\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU06\",\"version\":\"5.56\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]},\"creationSource\":\"Default\"}",
+		"layoutOptimization": 0,
+		"publicCustomVisuals": []
+	},
+	"addedPods": [],
+	"deletedPods": [],
+	"updatedPods": [],
+	"addedPages": [],
+	"deletedPages": [],
+	"updatedPages": [
+		{
+			"pageId": 26167296,
+			"addedVisualContainers": [
+				{
+					"id": -1,
+					"x": 8,
+					"y": 0,
+					"z": 0,
+					"width": 408,
+					"height": 336,
+					"config": {
+						"name": "8063b4194e0b7119ce9d",
+						"layouts": [
+							{
+								"id": 0,
+								"position": {
+									"x": 8,
+									"y": 0,
+									"z": 0,
+									"width": 408,
+									"height": 336,
+									"tabOrder": 0
+								}
+							}
+						],
+						"singleVisual": {
+							"visualType": "columnChart",
+							"projections": {
+								"Category": [
+									{
+										"queryRef": "Department.VP",
+										"active": true
+									}
+								],
+								"Y": [
+									{
+										"queryRef": "CountNonNull(Department.Department)"
+									}
+								]
+							},
+							"prototypeQuery": {
+								"Version": 2,
+								"From": [
+									{
+										"Name": "d",
+										"Entity": "Department",
+										"Type": 0
+									}
+								],
+								"Select": [
+									{
+										"Column": {
+											"Expression": {
+												"SourceRef": {
+													"Source": "d"
+												}
+											},
+											"Property": "VP"
+										},
+										"Name": "Department.VP",
+										"NativeReferenceName": "VP"
+									},
+									{
+										"Aggregation": {
+											"Expression": {
+												"Column": {
+													"Expression": {
+														"SourceRef": {
+															"Source": "d"
+														}
+													},
+													"Property": "Department"
+												}
+											},
+											"Function": 5
+										},
+										"Name": "CountNonNull(Department.Department)",
+										"NativeReferenceName": "Count of Department"
+									}
+								],
+								"OrderBy": [
+									{
+										"Direction": 2,
+										"Expression": {
+											"Aggregation": {
+												"Expression": {
+													"Column": {
+														"Expression": {
+															"SourceRef": {
+																"Source": "d"
+															}
+														},
+														"Property": "Department"
+													}
+												},
+												"Function": 5
+											}
+										}
+									}
+								]
+							},
+							"drillFilterOtherVisuals": true,
+							"hasDefaultSort": true,
+							"objects": {
+								"dataPoint": [
+									{
+										"properties": {
+											"fill": {
+												"solid": {
+													"color": {
+														"expr": {
+															"ThemeDataColor": {
+																"ColorId": 6,
+																"Percent": 0.2
+															}
+														}
+													}
+												}
+											},
+											"fillTransparency": {
+												"expr": {
+													"Literal": {
+														"Value": "53D"
+													}
+												}
+											},
+											"borderShow": {
+												"expr": {
+													"Literal": {
+														"Value": "true"
+													}
+												}
+											},
+											"borderColor": {
+												"solid": {
+													"color": {
+														"expr": {
+															"ThemeDataColor": {
+																"ColorId": 4,
+																"Percent": 0.6
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								]
+							}
+						}
+					},
+					"filters": "[]",
+					"query": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Department\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"VP\"},\"Name\":\"Department.VP\",\"NativeReferenceName\":\"VP\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Department\"}},\"Function\":5},\"Name\":\"CountNonNull(Department.Department)\",\"NativeReferenceName\":\"Count of Department\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Department\"}},\"Function\":5}}}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0,1]}]},\"DataReduction\":{\"DataVolume\":4,\"Primary\":{\"Window\":{\"Count\":1000}}},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+					"dataTransforms": "{\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":6,\"Percent\":0.2}}}}},\"fillTransparency\":{\"expr\":{\"Literal\":{\"Value\":\"53D\"}}},\"borderShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"borderColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0.6}}}}}}}]},\"projectionOrdering\":{\"Category\":[0],\"Y\":[1]},\"projectionActiveItems\":{\"Category\":[{\"queryRef\":\"Department.VP\",\"suppressConcat\":false}]},\"queryMetadata\":{\"Select\":[{\"Restatement\":\"VP\",\"Name\":\"Department.VP\",\"Type\":2048},{\"Restatement\":\"Count of Department\",\"Name\":\"CountNonNull(Department.Department)\",\"Type\":3}],\"Filters\":[{\"type\":0,\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Department\"}},\"Property\":\"VP\"}}},{\"type\":2,\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Department\"}},\"Property\":\"Department\"}},\"Function\":5}}}]},\"visualElements\":[{\"DataRoles\":[{\"Name\":\"Category\",\"Projection\":0,\"isActive\":true},{\"Name\":\"Y\",\"Projection\":1,\"isActive\":false}]}],\"selects\":[{\"displayName\":\"VP\",\"queryName\":\"Department.VP\",\"roles\":{\"Category\":true},\"type\":{\"category\":null,\"underlyingType\":1},\"expr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Department\"}},\"Property\":\"VP\"}}},{\"displayName\":\"Count of Department\",\"queryName\":\"CountNonNull(Department.Department)\",\"roles\":{\"Y\":true},\"sort\":2,\"sortOrder\":0,\"type\":{\"category\":null,\"underlyingType\":260},\"expr\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Department\"}},\"Property\":\"Department\"}},\"Function\":5}}}]}"
+				}
+			],
+			"updatedVisualContainers": [],
+			"deletedVisualContainers": [
+				796876579
+			]
+		}
+	]
+}
