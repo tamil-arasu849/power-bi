@@ -1,0 +1,157 @@
+{
+	"name": "City Park",
+	"dataColors": [
+		"#2768AE",
+		"#581818",
+		"#ECC846",
+		"#CD4C46",
+		"#1E1111",
+		"#8D6FD1",
+		"#591818",
+		"#342E97"
+	],
+	"background": "#FFFFFF",
+	"foreground": "#070f25",
+	"tableAccent": "#0F1934",
+	"bad": "#4C3030",
+	"backgroundNeutral": "#512929",
+	"textClasses": {
+		"label": {
+			"color": "#6B3D3D",
+			"fontFace": "wf_standard-font_light, helvetica, arial, sans-serif",
+			"fontSize": 15
+		},
+		"callout": {
+			"color": "#4D2828",
+			"fontFace": "'Cambria Math'",
+			"fontSize": 48
+		},
+		"title": {
+			"color": "#561E1E",
+			"fontFace": "'Cambria Math'",
+			"fontSize": 16
+		},
+		"header": {
+			"color": "#7E2929",
+			"fontFace": "Tahoma",
+			"fontSize": 15
+		}
+	},
+	"foregroundNeutralSecondary": "#6E3A3A",
+	"backgroundLight": "#572B2B",
+	"foregroundNeutralTertiary": "#342F2F",
+	"neutral": "#731919",
+	"good": "#5A1010",
+	"minimum": "#374064",
+	"center": "#611B1B",
+	"maximum": "#D89191",
+	"visualStyles": {
+		"*": {
+			"*": {
+				"background": [
+					{
+						"color": {
+							"solid": {
+								"color": "#422323"
+							}
+						}
+					}
+				],
+				"border": [
+					{
+						"color": {
+							"solid": {
+								"color": "#582D2D"
+							}
+						},
+						"show": true
+					}
+				],
+				"visualHeader": [
+					{
+						"background": {
+							"solid": {
+								"color": "#A85E5E"
+							}
+						},
+						"border": {
+							"solid": {
+								"color": "#AC5E5E"
+							}
+						}
+					}
+				],
+				"visualTooltip": [
+					{
+						"themedTitleFontColor": {
+							"solid": {
+								"color": "#916262"
+							}
+						}
+					}
+				],
+				"visualHeaderTooltip": [
+					{
+						"themedTitleFontColor": {
+							"solid": {
+								"color": "#916262"
+							}
+						}
+					}
+				],
+				"outspacePane": [
+					{
+						"backgroundColor": {
+							"solid": {
+								"color": "#442626"
+							}
+						}
+					}
+				],
+				"filterCard": [
+					{
+						"$id": "Applied",
+						"backgroundColor": {
+							"solid": {
+								"color": "#1F0D0D"
+							}
+						},
+						"transparency": 0
+					},
+					{
+						"$id": "Available",
+						"backgroundColor": {
+							"solid": {
+								"color": "#9B7575"
+							}
+						},
+						"transparency": 0
+					}
+				]
+			}
+		},
+		"page": {
+			"*": {
+				"background": [
+					{
+						"color": {
+							"solid": {
+								"color": "#FFFFFF"
+							}
+						},
+						"transparency": 100
+					}
+				],
+				"outspace": [
+					{
+						"color": {
+							"solid": {
+								"color": "#8D7171"
+							}
+						}
+					}
+				]
+			}
+		}
+	}
+}
